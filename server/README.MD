@@ -30,7 +30,7 @@ This project is an express app using typescript with the following modules :
 
 ### API Architecture
 
-![ API Architecture](/API.png)
+![ API Architecture](/server/API.png)
 
 ### API Endpoints
 
