@@ -1,0 +1,62 @@
+[
+    {
+        "name": "my product 1",
+        "price": 1.99,
+        "quantity": 1
+    },
+    {
+        "name": "my product 2",
+        "price": 8.50,
+        "quantity": 5
+    },
+    {
+        "name": "my product 3",
+        "price": 4.99,
+        "quantity": 2
+    },
+    {
+        "name": "super product",
+        "price": 199.98,
+        "quantity": 7
+    },
+    {
+        "name": "small product 1",
+        "price": 0.99,
+        "quantity": 58
+    },
+    {
+        "name": "small product 2",
+        "price": 2.67,
+        "quantity": 257
+    },
+    {
+        "name": "medium product 1",
+        "price": 15.50,
+        "quantity": 24
+    },
+    {
+        "name": "medium product 2",
+        "price": 17.19,
+        "quantity": 0
+    },
+    {
+        "name": "medium product 3",
+        "price": 12.00,
+        "quantity": 4
+    },
+    {
+        "name": "awesome product 1",
+        "price": 490.95,
+        "quantity": 19
+    },
+    {
+        "name": "awesome product 2",
+        "price": 754.48,
+        "quantity": 1235
+    },
+    {
+        "name": "incredible product",
+        "price": 999999.99,
+        "quantity": 1
+    }
+]
