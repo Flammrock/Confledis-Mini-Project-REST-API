@@ -1,5 +1,7 @@
 # Confledis Mini-Project
 
+Demo online here : https://confledis-project-rest-api-lb.herokuapp.com/
+
 ## How to build the project?
 
 Install all dependencies :
