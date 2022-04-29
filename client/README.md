@@ -2,8 +2,7 @@
 
   
 Author: **Lemmy Briot**  
-\
-\
+<br /><br />
 This project has be built using :
 
 ```
@@ -61,7 +60,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run format`
 
-Use [prettier](https://prettier.io/) to format the whole project (indent, ...)
+This command use [prettier](https://prettier.io/) to format the whole project (indent, ...)
 
 ## Learn More
 

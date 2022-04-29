@@ -1,27 +1,44 @@
+# Confledis Mini-Project
+
+## How to build the project?
+
+Install all dependencies :
+```
+npm install
+```
+
+Run the npm build script :
+```
+npm run build
+```
+
+Finally, run the server :
+```
+npm start
+```
+
+Go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to see the result.
+
+
+
+
+
 # Confledis Mini-Project Server (Backend)
 
   
 Author: **Lemmy Briot**  
-\
-\
+<br /><br />
 This project is an express app using typescript with the following modules :
 
   
 
 - body-parser:1.20.0 (Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property)
-
 - cors:2.8.5
-
 - dotenv:16.0.0
-
 - express:4.18.0
-
 - helmet:5.0.2 (secure the express app by settings various header)
-
 - morgan:1.10.0 (log http request)
-
 - sequelize:6.19.0 (abstraction layer for database communication)
-
 - sqlite3:5.0.5 (database used in this project (memory based))
 
 
@@ -38,7 +55,7 @@ This project is an express app using typescript with the following modules :
 
 ### API Architecture
 
-![ API Architecture](/API.png)
+![ API Architecture](/server/API.png)
 
 ### API Endpoints
 
@@ -70,8 +87,8 @@ This endpoint allow to retrieve the product with the corresponding **id**.
 |URL Params|Type|Description|
 |--|--|--|
 |:id|integer|the ID of the product|
-\
-\
+
+<br /><br />
 Example of request and response :
 `GET /api/v1/products/2`
 ```json
@@ -82,8 +99,7 @@ Example of request and response :
 	"quantity": 5
 }
 ```
-\
-\
+<br /><br />
 If the product with the corresponding ID doesn't exist, the server response by :
 ```json
 {
@@ -126,14 +142,15 @@ This endpoint allow to update the product with the corresponding **id**.
 |URL Params|Type|Description|
 |--|--|--|
 |:id|integer|the ID of the product|
-\
-\
+
+<br /><br />
 POST Data :
 |Key|Type|Description|
 |--|--|--|
 |[name]|string|the name of the product|
 |[price]|real|the price of the product|
 |[quantity]|integer|the quantity of the product|
+
 [] -> optional
 
 Example of PUT Data :
@@ -150,8 +167,7 @@ Example of PUT Data :
 	"quantity": 4
 }
 ```
-\
-\
+<br /><br />
 With the example of POST Data above, the server response by :
 ```json
 {
@@ -161,8 +177,7 @@ With the example of POST Data above, the server response by :
 	"quantity": 4
 }
 ```
-\
-\
+<br /><br />
 If the product with the corresponding ID doesn't exist, the server response by :
 ```json
 {
@@ -192,15 +207,15 @@ POST Data :
 |name|string|name of products that contain this string|
 |price|condition|price of products that satisfy this condition|
 |quantity|condition|quantity of products that satisfy this condition|
-\
-\
+
+<br /><br />
 Custom Type **condition** :
 |Key|Type|Description|
 |--|--|--|
 |operator|operator|The operator used in the condition|
 |value|number|The number to compare|
-\
-\
+
+<br /><br />
 Custom Enum **operator** :
 |Value|type|Description|
 |--|--|--|
@@ -210,8 +225,8 @@ Custom Enum **operator** :
 |<=|string|inferior or equals operator|
 |>=|string|superior or equals operator|
 |!=|string|not equals|
-\
-\
+
+<br /><br />
 Examples of POST Data for searching :
 
 If we want to search all product that contain `du` :
@@ -220,8 +235,7 @@ If we want to search all product that contain `du` :
 	"name": "du"
 }
 ```
-\
-\
+<br /><br />
 If we want to search all products with a price > 10 :
 ```json
 {
@@ -231,8 +245,7 @@ If we want to search all products with a price > 10 :
 	}
 }
 ```
-\
-\
+<br /><br />
 If we want to search all products with a price <= 2.99 and contain `product` :
 ```json
 {
@@ -243,8 +256,7 @@ If we want to search all products with a price <= 2.99 and contain `product` :
 	}
 }
 ```
-\
-\
+<br /><br />
 If we want to search all products with a price <= 2.99 and contain `product` and with a quantity >= 4 :
 ```json
 {
@@ -259,8 +271,7 @@ If we want to search all products with a price <= 2.99 and contain `product` and
 	},
 }
 ```
-\
-\
+<br /><br />
 Example of response by the server :
 ```json
 [
@@ -283,8 +294,7 @@ Example of response by the server :
 
   
 Author: **Lemmy Briot**  
-\
-\
+<br /><br />
 This project has be built using :
 
 ```
